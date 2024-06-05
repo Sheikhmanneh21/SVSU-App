@@ -1,0 +1,65 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(50, 0, 0, 0.83), rgba(50, 0, 0, 0.83)), url(Saginaw.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #333;
+
+}
+
+.card h1{ 
+    font-weight: 500;
+    color: #000;
+}
+
+.card img{ 
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+label{ 
+    display: block;
+    width: 200px;
+    background: #e3362c;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{ 
+    display: none;
+}
+
+.next-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.next-btn:hover {
+    background-color: #0056b3;
+}

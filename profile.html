@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <script defer src="profile.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Profile</h1>
+        <img src="images/profile.png" id="profile-pic" />
+        <label for="input-file">Add Profile Picture</label>
+        <input
+          type="file"
+          accept="image/jpeg, image/png, image/jpg"
+          id="input-file"
+        />
+      </div>
+    </div>
+    <button id="nextBtn" class="next-btn">Next</button>
+    <script>
+      let profilePic = document.getElementById("profile-pic");
+      let inputFile = document.getElementById("input-file");
+      let nextBtn = document.getElementById("nextBtn");
+
+      inputFile.onchange = function () {
+        profilePic.src = URL.createObjectURL(inputFile.files[0]);
+      };
+
+      nextBtn.onclick = function () {
+        window.location.href = "next_page.html"; // Replace with the actual page you want to redirect to
+      };
+    </script>
+  </body>
+</html>
