@@ -2,7 +2,7 @@
 <html>
 <link rel="stylesheet" href="site.css">
 <header class="header" id="header">
-    <div class="logo">      <img src="SVSULOGO.png">
+    <div class="logo">     <a href="site.html"> <img src="SVSULOGO.png"></a>
     </div>
     <nav>
       <ul>
@@ -13,16 +13,58 @@
     </nav>
   </header>
 
+<body>
 
-<div class="photo">
-   
-<img src="redgradient2.png">
+  <div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="redgradient2.png" >
+        </div>
+        <div class="carousel-slide">
+            <img src="DT-sag.png" >
+        </div>
+        <div class="carousel-slide">
+            <img src="Gazelle-Fountain-1920x702.png">
+        </div>
+        <div class="carousel-slide">
+          <img src="Sculpture Fountain-1920x1080c.jpg" >
+      </div>
+      <div class="carousel-slide">
+        <img src="Saginaw-Michigan-River-Fall.png" >
+    </div>
+        <div class="carousel-slide">
+          <img src="redgradient2.png" >
+      </div>
+     
+      </div>
+      <div class="carousel-controls">
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+    </div>
+    </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="centeredtext">
 <h1>WELCOME TO CARDINAL SPOTS</h1>
 
-
-
-
 </div>
 
 
@@ -31,15 +73,81 @@
 
 
 
-</div>
 
-<main>
+<script>
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const totalSlides = slides.length;
+const carouselContainer = document.querySelector('.carousel-container');
+const carouselWidth = document.querySelector('.carousel').clientWidth;
+
+document.querySelector('.next').addEventListener('click', () => {
+    moveToNextSlide();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    moveToPreviousSlide();
+});
+
+function updateCarousel() {
+    carouselContainer.style.transition = 'transform 0.5s ease-in-out';
+    carouselContainer.style.transform = `translateX(-${currentIndex * carouselWidth}px)`;
+}
+
+function moveToNextSlide() {
+    if (currentIndex === totalSlides - 1) {
+        carouselContainer.style.transition = 'none';
+        carouselContainer.style.transform = `translateX(0px)`;
+        currentIndex = 0;
+        setTimeout(() => {
+            carouselContainer.style.transition = 'transform 0.5s ease-in-out';
+            currentIndex++;
+            updateCarousel();
+        }, 50);
+    } else {
+        currentIndex++;
+        updateCarousel();
+    }
+}
+
+function moveToPreviousSlide() {
+    if (currentIndex === 0) {
+        carouselContainer.style.transition = 'none';
+        currentIndex = totalSlides - 1;
+        carouselContainer.style.transform = `translateX(-${currentIndex * carouselWidth}px)`;
+        setTimeout(() => {
+            carouselContainer.style.transition = 'transform 0.5s ease-in-out';
+            updateCarousel();
+        }, 50);
+    } else {
+        currentIndex--;
+        updateCarousel();
+    }
+}
+
+// Initial delay for the first image
+setTimeout(() => {
+    // Auto slide functionality
+    setInterval(() => {
+        moveToNextSlide();
+    }, 3000); // Change slide every 3 seconds
+}, 1000); // Initial delay for the first image (5 seconds)
+
+// Initial update to set the correct position of slides
+updateCarousel();
+
+</script>
+
+
+
+
+
     <section class="grid-container">
 
         <div class="grid-item">
 
           <div class="fill">
-            <h1>Coffee spots</h1>
+            <h1>Coffee Spots</h1>
             <img src="coffee.jpg">
           </div>
           
@@ -66,23 +174,74 @@
 
 
         </div>
-        <div class="grid-item">
-
-          
-        </div>
+       
         <div class="grid-item">
           <div class="fill">
 
-            <h1>Gyms</h1>>
+           <a href="Gyms.html"> <h1>Gyms</h1> </a>
   
             <img src="Gympic.png">
             </div>
 
 
         </div>
-        <div class="grid-item">Box 6</div>
+        <div class="grid-item">
+            <div class="fill">
+
+              <h1>Thrifting</h1>
+            <img src="Thrift.png">
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="fill">
+
+            <h1>Golf Courses</h1>
+
+              <img src="Golfpic2.png">
+
+
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+
     </section>
-</main>
+
+
+
+
+
+<div class="footer hidden" id="footer">
+  <h3>Cardinal Spots</h3>                 <h3>SVSU Mainpage</h3>     
+
+  
+
+
+
+</div>
+
+
+<script>
+  window.addEventListener('scroll', function() {
+      const footer = document.getElementById('footer');
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50) {
+          footer.classList.remove('hidden');
+      } else {
+          footer.classList.add('hidden');
+      }
+  });
+</script>
+
+
+
+    
 
 
 
@@ -93,9 +252,18 @@
 
 
 
+</body>
 
 
 
+
+
+
+
+
+
+
+</html>
 
 
 

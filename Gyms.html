@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Gyms.css">
+<header class="header" id="header">
+    <div class="logo">      <a href="site.html"> <img src="SVSULOGO.png"></a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+       <a href="mainpage.html">      Saved </a>
+        <a href="About me.html">          Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+ 
+
+
+
+<div class="photo">
+   
+<img src="gymheader.png">
+<div class="centeredtext">
+<h1>Fitness Centers</h1>
+
+
+
+
+</div> 
+
+<div class="allgrids">
+    <div class="grid-container">
+        <div class="grid-item" id="rec">
+            <h1><u>Ryder Reccenter - On Campus</u></h1>
+                
+
+            <div class = "text">
+               
+                    <p>
+                   <h3><u>Fitness center Hours:  </u></h3>                                            
+                 
+                    
+                    <h3>Monday - Thurs: 6:30am - 8:00pm</h3>
+            
+                    <h3>Friday: 6:30 am - 6:30 pm</h3>
+                
+                   <h3>Saturday: 10:00 am - 3:00 pm</h3> 
+
+                   <h3>Sunday: 12:00 pm - 5:00 pm
+
+                   </h3>
+                </p>
+                </div>
+
+                <div class = "text2">
+                    <h3><u>Pool hours</u></h3>    
+
+                        <h3> 10:30 am - 1:30 pm & 4:00 pm - 6:00 pm </h3>
+                        <h3>10:30 am - 1:30 pm</h3>
+                        <h3>CLOSED</h3>
+                        <h3>CLOSED</h3>
+
+
+
+                </div>
+
+
+                
+
+        </div>
+        <div class="grid-item" id="coops">
+            <h1><u>Coops Ironworks</u></h1>
+            <div class="text">
+                <h3><u>Fitness center Hours:  </u></h3>                                            
+
+                    <h3>Monday: 5:00 am - 12:00 am</h3>
+
+                    <h3>Tuesday - Friday: 12:00 am - 12:00 am</h3>
+
+                    <h3>Saturday: 12:00 am - 9:00 pm</h3>
+
+                    <h3>Sunday: 8:00 am - 8:00 pm</h3>
+
+            </div>
+
+                <div class="text2">
+
+                    <h3><u>See Website for prices</u></h3>
+
+                    <h3>coopsiron.com</h3>
+
+                    <h3>Address: 3081 Bay Plz Dr, Saginaw, MI 48604
+                    </h3>
+
+
+                </div>
+
+
+            </div>
+        <div class="grid-item" id="pf">
+            <h1><u>Planet Fitness</u></h1>
+            <div class="text">
+            <h3><u>Fitness Center Hours</u></h3>
+
+            <h3>Monday: 5:00 am - 12:00 am</h3>
+
+            <h3>Tuesday - Thursday: Open 24hrs</h3>
+
+            <h3>Friday: 12:00 am - 10:00 pm</h3>
+
+            <h3>Saturday & Sunday : 6:00 am - 10:00 pm</h3>
+
+        </div>
+        <div class="text2">
+
+            <h3><u>See Website for prices</u></h3>
+
+            <h3>coopsiron.com</h3>
+
+            <h3>Address: 3081 Bay Plz Dr, Saginaw, MI 48604
+            </h3>
+
+
+        </div>
+
+
+
+
+
+
+
+        </div>
+      
+
+</div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpze2T-YQ7BuPtWWavENXVVVyMVWdtMMw&callback=initMap&v=weekly"
+    defer
+  ></script>
+
+
+    <div class="map">
+  <div id="map"></div>
+  <script src="script1.js"></script>
+
+  <!-- prettier-ignore -->
+  <script>
+      (function(g) {
+          var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window;
+          b = b[c] || (b[c] = {});
+          var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => {
+              await (a = m.createElement("script"));
+              e.set("libraries", [...r] + "");
+              for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+              e.set("callback", c + ".maps." + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => h = n(Error(p + " could not load."));
+              a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+              m.head.append(a);
+          }));
+          d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+      })({
+          key: "AIzaSyCpze2T-YQ7BuPtWWavENXVVVyMVWdtMMw",
+          v: "weekly"
+      });
+  </script>
+
+</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #b7b9b9);
+    padding-bottom: 500px;
+  }
+  
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #333;
+    color: rgb(78, 123, 206);
+    padding: 18px;
+    word-spacing: 0.5em;
+    transition: background-color 0.3s ease-out;
+    z-index: 1000;
+  }
+  
+  
+  .logo img {
+    position: absolute;
+    width: 70px;
+    height: auto;
+    padding-left: 10px;
+    padding-top: -10px;
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+  
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-left: 88%;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+  
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+  }
+  
+  
+  nav ul li a:hover {
+    text-decoration: line-through;
+  }
+  
+  
+  .photo img {
+    
+    padding-top: 20px;
+    height: 55%;
+    width: auto;
+  }
+  
+  
+  .centeredtext {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    padding: 16px 32px;
+    border-radius: 12px;
+}
+.allgrids{
+  
+    padding-top: 200px;
+    height: 900px;
+
+
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 300px);
+    width: 50%;
+    padding-left: 30px;
+    height: 1400px;
+    grid-gap: 40px;
+    overflow-y: auto;
+    align-content: center;
+    
+}
+
+.grid-item  {
+    display: flex;    
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+
+    border: 1px solid #3d3838;
+}
+
+.grid-item h1 {
+color: white;
+position: absolute;
+text-align:center;
+padding-left: 25px;
+
+}
+
+#rec{
+
+    background-image: url('reccenter.jpg'); /* Replace with your image path */
+   
+}
+
+
+
+
+
+#coops{
+    background-image: url('coops.jpg'); /* Replace with your image path */
+
+
+}
+#pf{
+    background-image: url('planetfitness.jpg'); /* Replace with your image path */
+
+
+}
+
+
+
+
+
+.grid-item img{
+
+padding-left: 100px;
+height:auto;
+width: 300px;
+
+
+}
+
+
+
+
+.text{
+    padding-top: 60px;
+    padding-left: 45px;
+   
+
+
+}
+.text h3{
+
+color:white;
+align-content: left;
+
+
+}
+
+.text2 {
+    padding-top: 60px;
+color:white;
+padding-left: 70px;
+
+
+
+}
+
+.text2 h1{
+padding-top: -60px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map{
+width: 700px;
+height: 800px;
+margin-top: -1300px;
+padding-left: 1100px;
+
+
+
+}
+
+
+#map {
+
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
